@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Practice.Textbox">
+      <class name="Practice.WebtableSumofprice">
         <methods>
-          <include name="verifyTextbox"/>
+          <include name="verifysumofamount"/>
         </methods>
-      </class> <!-- Practice.Textbox -->
+      </class> <!-- Practice.WebtableSumofprice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
