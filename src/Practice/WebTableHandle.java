@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -61,6 +62,9 @@ public class WebTableHandle {
 				 
 			 }
 		 }
+		 
+		
+		 
 		 
 		 System.out.println(eachdata);
 		 

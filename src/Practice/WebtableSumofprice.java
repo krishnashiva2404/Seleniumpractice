@@ -22,7 +22,7 @@ public class WebtableSumofprice {
 		driver.manage().window().maximize();
 		Thread.sleep(4000);
 		System.out.println(driver.getTitle());
-		String section = driver.findElement(By.xpath("//legend[contains(text(),'Web Table Fixed header')]")).toString();
+		String section = driver.findElement(By.xpath("//legend[contains(text(),'Web Table Fixed header')]")).getText();
 		System.out.println(section);
 		JavascriptExecutor jse=(JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0,600)");
@@ -35,8 +35,10 @@ public class WebtableSumofprice {
 		System.out.println(row);
 		System.out.println(column);
 		Thread.sleep(3000);
-	//	WebElement element = driver.findElement(By.className("tableFixHead"));
-		//jse.executeScript("arguments[0].setAttribute('style','height:210px');", element);
+		
+		// by Javscript executor we set the attribute value of the element to expand the webtable by changing the value of height from 190 to 300px
+		WebElement element = driver.findElement(By.className("tableFixHead"));
+		jse.executeScript("arguments[0].setAttribute('style','height:300px');", element);
 		
 		Thread.sleep(3000);
 		
